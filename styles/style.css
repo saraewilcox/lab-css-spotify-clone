@@ -24,11 +24,40 @@ White: #FFF
     align-items: center;
   }
   
-  #spotify-logo > img {
+  .spotify-logo > img {
     height: 65px;
     margin: 10px 30px;
+    position: relative;
+
   }
-  
+  .spotify-logo > img:hover {
+    animation: bounce 6s infinite
+  }
+
+  @keyframes bounce {
+    0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    16%, 48%, 78%, 100% {
+        top: 190px;
+        animation-timing-function: ease-out;
+    }
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 100px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+
+  }
+
   #nav-bar > ul > li {
     display: inline;
     list-style: none;
